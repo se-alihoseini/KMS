@@ -1,7 +1,6 @@
 from  backbone.interface import UseCaseInterface
 from django.http import JsonResponse
 from account.validators import TestUserValidator
-from account.validators import TestUserValidator
 
 
 class TestUserUseCase(UseCaseInterface):

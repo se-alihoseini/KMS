@@ -74,10 +74,17 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+AUTH_USER_MODEL = "account.User"
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'kms_db',
+        'USER': 'kms_user',
+        'PASSWORD': 'kms_password',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
